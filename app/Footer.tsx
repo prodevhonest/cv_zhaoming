@@ -27,7 +27,7 @@ const Footer = () => {
     const renderContacts = () => {
         return (<div className="my-contacts flex py-8">
             {contacts.map((contact: any, index: number) => (
-                <div className="one-contact flex-1 flex flex-col justify-center items-center">
+                <div className="one-contact flex-1 flex flex-col justify-center items-center" key={index}>
                     <div className="contact-icon flex justify-center items-center">
                         <Image 
                             src={`/images/icons/svg/${contact.icon}`} 

@@ -15,7 +15,7 @@ const MainInfo = () => {
         <div className="main-info-2 w-full h-full">
             <div className="m-auto lg:max-w-7xl flex">
                 <div className="name-avatar flex flex-col">
-                    <Image src='/images/avatar/myavatar.jpg' width={200} height={200}  alt='' />
+                    <img src='/images/avatar/myavatar.jpg' style={{width:200, height: 200}} alt='' />
                     <div className="mt-4 name">Zhao Ming</div>
                     <div className="mt-4 basic-skill">Seasoned Blockchain Programmer</div>
                 </div>

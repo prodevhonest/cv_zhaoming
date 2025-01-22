@@ -5,7 +5,7 @@ const AboutMe = () => {
     <section className="about-me m-auto lg:max-w-7xl">
         <h1 className="text-center">About Me</h1>
         <div className="flex align-items-center mt-4">
-            <Image src='/images/others/ab1.jpg' width={500} height={300} alt="" />
+            <img src='/images/others/ab1.jpg' style={{width:500, height:300}} alt="" />
             <div className="me-description">
                 <div>
                     <h4 className="text-amber">Who am I</h4>

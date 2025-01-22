@@ -71,6 +71,7 @@ const MyProject = () => {
                 {url: '/images/my_projects/astrotalk/chatroom.jpg', description: 'Chat Room'},
             ],
             description: "Clients can have a chat with advisors based on websocket.",
+            url: "https://confideas.com"
         },
         {
             title: 'Icands',
