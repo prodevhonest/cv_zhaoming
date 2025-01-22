@@ -1,0 +1,54 @@
+.connect-us-modal {
+    .modal-body{
+        background: rgb(27,11,60);
+        position: relative;
+        .close-btn {
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .left-bar {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: ' ';
+                background-color: rgb(99,4,182);
+                top: calc(50% - 1px);
+                left: 0;
+                right: 5px;
+                height: 2px;
+            }
+        }
+        .right-bar {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: ' ';
+                background-color: rgb(99,4,182);
+                top: calc(50% - 1px);
+                left: 0;
+                right: 5px;
+                height: 2px;
+            }
+        }
+        ul {
+            li {
+                background: rgb(19,8,43);
+                border-radius: 20px;
+                padding: 10px 20px;
+                margin-bottom: 10px;
+                width: 100%;
+                text-align: left;
+                color: #888;
+            }
+        }
+        .more-wallet-options {
+            padding: 10px 20px;
+            color: rgb(140,80,164);
+        }
+    }
+    .modal-footer {
+        background: rgb(27,11,60);
+    }
+}

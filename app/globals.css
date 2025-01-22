@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Begex';
+  src: url('/fonts/begex.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaBK';
+  src: url('/fonts/futura_bk.otf') format('opentype');
+  font-weight: normal; /* Adjust if necessary */
+  font-style: normal; /* Adjust if necessary */
+}
+@font-face {
+  font-family: 'YanoneKaff';
+  src: url('/fonts/YanoneKaffeesatz.ttf') format('truetype');
+  font-weight: normal; /* Adjust if necessary */
+  font-style: normal; /* Adjust if necessary */
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --amber: #fdac14;
+  --lightblue: #00bcd4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.mt-100px {
+  margin-top: 100px !important;
+}
+.mt-50px {
+  margin-top: 50px !important;
+}
+.ps-4 {
+  padding-left: 1rem;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+.fs-120 {
+  font-size: 120% !important;
+}
+.fs-110 {
+  font-size: 110% !important;
+}
+.fs-120 {
+  font-size: 120% !important;
+}
+.fs-150 {
+  font-size: 150% !important;
+}
+
+h1 {
+  font-size: 34px;
+  color: var(--lightblue);
+  font-weight: bold;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 26px;
+}
+h4 {
+  font-size: 22px;
+}
+.text-amber {
+  color: var(--amber);
+}
+.text-lightblue {
+  color: var(--lightblue);
+}
+.text-amber {
+  color: var(--amber);
+}
+
+
+.w-150px {
+  width: 150px !important;
+}
+.w-120px {
+  width: 120px !important;
+}
+
+body {
+  color: white;
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.purple-gradient-text {
+  background: linear-gradient(to bottom, #c58cfb, #700081); /* Your gradient colors */  
+  -webkit-background-clip: text;  
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Make text fill transparent */
+  font-weight: bold;
+}
+
+footer {
+  .bg-strong-purple {
+    background: rgb(22, 10, 46);
+  }
+  .q1-2024 {
+    color: #eee;
+  }
+
+  ul {
+    list-style: circle;
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  .phase3 {
+    &.left-border {
+      padding: 16px 32px !important;
+      border-image: linear-gradient(90deg, #160a2e, #7c3bfd) 1;
+    }
+    &.right-border {
+      padding: 16px 16px !important;
+      border-image: linear-gradient(270deg, #160a2e, #7c3bfd) 1;
+    }
+  }
+}
+
+.comment-purple {
+  color: #7709a3;
+  font-size: 90%;
+}
+.comment-gray {
+  color: #aaa;
+  font-size: 90%;
+}
+
+.font-begex {
+  font-family: Begex;
+}
+.font-futura-bk {
+  font-family: FuturaBK;
+}
+.font-yanoneKaff {
+  font-family: YanoneKaff;
+}
+
+.text-gray {
+  color: #aaa !important;
+}
+.text-lightgray {
+  color: #ddd !important;
+}
+
+.wm-tabs {
+  ul {
+    margin: 0px !important;
+    border: none !important;
+    li {
+      padding: 15px 10px 8px 10px !important;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom: none;
+      background: rgb(52,38,78);
+      border: none;
+      margin: 0 5px 0 5px;
+      min-width: 130px;
+      font-weight: bold;
+      color: rgb(21,13,54);
+      text-align: center;
+      &.react-tabs__tab--selected {
+        color: black !important;
+        background: linear-gradient(to right, rgb(146,4,255), rgb(236,120,255));
+      }
+    }
+  }
+}
+
+a {
+  &:hover {
+    color: rgb(0, 110, 255) !important;
+    text-decoration: underline;
+  }
+}
+
+.description-gray {
+  font-size: 15px;
+  color: #ddd;
+}
+
+.modal {
+  .modal-body {
+    color: #333 !important;
+    .close-btn {
+      position: absolute;
+      cursor: pointer;
+      right: 20px;
+      top: 20px;
+    }
+  }
+}

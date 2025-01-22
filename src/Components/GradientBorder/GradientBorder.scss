@@ -1,0 +1,51 @@
+.gradient-border {
+    position: relative;
+    padding: 20px;
+
+    $border: 2px;
+    $border-radius: 20px;
+
+    color: #FFF;
+    background-clip: padding-box;
+    // border: solid $border transparent;
+    border-radius: $border-radius;
+
+    &.default {
+        background: #000;
+    }
+    &.purple {
+        background: rgb(86,52,111);
+    }
+    &.light-purple {
+        background: linear-gradient(to right, rgb(145,3,254), rgb(237,121,253));
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; 
+        width: calc(50% + $border);
+        bottom: 0; 
+        left: 0;
+        z-index: -1;
+        margin: -$border;
+        margin-right: 0px;
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+        background: linear-gradient(to right, rgb(66,40,93), rgb(30,21,53));
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0; 
+        width: calc(50% + $border);
+        bottom: 0; 
+        right: 0;
+        z-index: -2;
+        margin: -$border;
+        margin-left: 0px;
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        background: linear-gradient(to right,rgb(30,21,53), rgb(66,40,93));
+    }
+}
